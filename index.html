@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest"><head>
+<meta charset="UTF-8" />
+<link rel="shortcut icon" href="img/favicon.ico" />
+<title>CRONO_ DREAMBOX PS4 FW 9.00 V3</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/simple-notify.min.css" />
+<style> 
+    html, body{
+      background: url('img/bg1.png');
+      background-attachment: fixed;
+      margin:auto;
+      font-size:20px;
+      font-weight:lighter;
+      color:#FFFFFF;
+      background-color: #000;
+      background-attachment: fixed;
+      background-size:100% 100%;
+      background-repeat:no-repeat;
+}
+</style>
+<script src="int64.js"></script>
+<script src="rop.js"></script>
+<script src="kexploit.js"></script>
+<script src="webkit.js"></script>
+</head>
+<body>
+<script>
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Instalando Cache Offline: " + Percent + "%";}
+function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache Instalado com Successo ✔";},1000);setTimeout(function(){window.msgs.innerHTML="Agora Feche e Re-Abra o Navegador...";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+</script>
+<h1 id="msgs">CRONO_ DREAMBOX PS4 9.XX V3</h1>
+<hr>
+<br>
+<div style="text-align:center">
+
+  <button class="btn btn-main"  onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V3.0'" onMouseOver="progress.innerHTML='GOLD - HEN V2.0B2 Para todos os FW 9.00'";   type="button"><img class="icone" src="img/HenEnable.png" onclick=load_goldhen2b2() /><br> GOLD HEN V2.0B2 </button>
+
+  <button class="btn btn-main" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V3.0'" onMouseOver="progress.innerHTML='GOLD - HEN V2.0B Para todos os FW 9.00'";   type="button"><img class="icone" src="img/HenEnable.png" onclick=load_goldhen2b() /><br> GOLD HEN V2.0B </button>
+</div>
+
+
+<div style="text-align:center"  id="MyItems"><br>
+
+<a href="https://twitter.com/cronocardoso"><img class="icon" src="img/icon.gif"/></a> 
+<br>
+<hr style="width: 50%"><h1 style="color:#00FF12;" >PAYLOADS DISPONIVEIS</h1><hr style="width: 50%">
+<br>
+
+
+
+<button class="btn" onclick=load_binloader()><img class="icone" src="img/binloader.png" /><br> Bin Loader </button>
+<button class="btn" onclick=load_dumper()><img class="icone" src="img/dumper.png" /><br> Game Dumper </button>
+<button class="btn" onclick=load_app2usb()><img class="icone" src="img/app2usb.png" /><br> App-To-Usb </button>
+<button class="btn" onclick=load_todex()><img class="icone" src="img/todex.png" /><br> To -  Dex </button>
+<button class="btn" onclick=load_ftp()><img class="icone" src="img/ftp.png" /><br> FTP </button>
+<button class="btn" onclick=load_enablebUpdates()><img class="icone" src="img/enableupdate.png" /><br> Habilitar Upadates </button>
+<button class="btn" onclick=load_disableUpdates()><img class="icone" src="img/disableupdate.png" /><br> Desabilitar Upadates </button>
+
+
+<br><br>
+
+<!--------------------------------------------------------------------------------------------------------------->
+<button class="btn" onclick=load_historyBlocker()><img class="icone" src="img/disableupdate.png" /><br> Bloquear Historico </button>
+<button class="btn" onclick=load_enablehistory()><img class="icone" src="img/enableupdate.png" /><br> Habilitar Navegador </button>
+<button class="btn" onclick=load_dbackup()><img class="icone" src="img/backup.png" /><br> Backup DB </button>
+<button class="btn" onclick=load_dbrestore()><img class="icone" src="img/restore.png" /><br> Restaurar DB </button>
+<button class="btn" onclick=load_ps4debug()><img class="icone" src="img/ps4debug.png" /><br> PS4 Debug </button>
+<button class="btn" onclick=load_webrte()><img class="icone" src="img/rte.png" /><br> Web - RTE </button>
+<button class="btn" onclick=load_fanthreshold()><img class="icone" src="img/FanControl.png" /><br>  Controle de Fan </button><select id="tempC" style="font-size:20px; height:35px; width:60px; background-color:#4D0094; color:#fff; border:3px solid #6C0000" ></select>&#176;C
+<br><br>
+
+<!--------------------------------------------------------------------------------------------------------------->
+<a href="http://ps4trainer.com/Trainer/index.html"><button class="btn btn-web"><img class="icone" src="img/rte.png" /><br>  Treiner Web PS4 </button></a>
+<a href="webactivator.html"><button class="btn"><img class="icone" src="img/rte.png" /><br> Ativardor PSN </button></a>
+<button class="btn btn-toolbox" onclick=load_toolbox()><img class="icone" src="img/ps4debug.png" /><br>  Orbis - Toolbox </button>
+
+<button class="btn" onclick=load_disbAslr()><img class="icone" src="img/disableupdate.png" /><br> Desabilitar ASLR </button>
+<button class="btn" onclick=load_exitidu()><img class="icone" src="img/history.png" /><br> Exit IDU </button>
+<button class="btn" onclick=load_rifRen()><img class="icone" src="img/keydumper.png" /><br> RIF Renaner </button>
+<button class="btn" onclick=load_permUart()><img class="icone" src="img/keydumper.png" /><br>  Permanent UART </button>
+
+
+<br><br>
+<button class="btn" onclick=load_kernelDump()><img class="icone" src="img/history.png" /><br> Kernel Dumper </button>
+<button class="btn" onclick=load_moduleDump()><img class="icone" src="img/history.png" /><br> Kernel Clock </button>
+<a href="payload.html#p0=mira.js&p1=linux1gb.js"><button class="btn"><img class="icone" src="img/linux.png" /><br> Linux 1GB </button></a>
+<a href="payload.html#p0=mira.js&p1=linux2gb.js"><button class="btn"><img class="icone" src="img/linux.png" /><br> Linux 2GB </button></a>
+<a href="payload.html#p0=mira.js&p1=linux3gb.js"><button class="btn"><img class="icone" src="img/linux.png" /><br> Linux 3GB </button></a>
+<a href="payload.html#p0=mira.js&p1=linux4gb.js"><button class="btn"><img class="icone" src="img/linux.png" /><br> Linux 4GB </button></a>
+<a href="payload.html#p0=mira.js&p1=linux5gb.js"><button class="btn"><img class="icone" src="img/linux.png" /><br> Linux 5GB </button></a>
+<br><br>
+
+<button class="btn" onclick=load_arabicGuy127()><button class="btn"><img class="icone" src="img/gtav.png" /><br> Arabic Guy v1.27 </button>
+<button class="btn" onclick=load_arabicGuy132()><img class="icone" src="img/gtav.png" /><br> Arabic Guy v1.32 </button>
+<button class="btn" onclick=load_arabicGuy133()><img class="icone" src="img/gtav.png" /><br> Arabic Guy v1.33 </button>
+<button class="btn" onclick=load_beefQueef133()><img class="icone" src="img/gtav.png" /><br> Beef Queef Mod v1.33 </button>
+<button class="btn" onclick=load_beefQueef134()><img class="icone" src="img/gtav.png" /><br> Beef Queef Mod v1.34 </button>
+
+<br><br>
+<button class="btn" onclick=load_beefQueef138()><img class="icone" src="img/gtav.png" /><br> Beef Queef Mod v1.38 </button>
+<button class="btn" onclick=load_Oysters100()><img class="icone" src="img/gtav.png" /><br> Oysters Menu v1.00 </button>
+<button class="btn" onclick=load_Oysters113()><img class="icone" src="img/gtav.png" /><br> Oysters Menu v1.13 </button>
+<button class="btn" onclick=load_Oysters119()><img class="icone" src="img/gtav.png" /><br> Oysters Menu v1.19 </button>
+<button class="btn" onclick=load_Oysters124()><img class="icone" src="img/gtav.png" /><br> Oysters Menu v1.24 </button>
+<br>
+
+<br><br><br>
+
+<script>
+for(var i=40; i<=79; i++){
+    var select = document.getElementById("tempC");
+    var option = document.createElement("OPTION");
+	select.options.add(option);
+	option.text = i;
+	option.value = i;
+}
+tempC.value=60;
+</script>
+<script>
+function load_payload(){
+var req = new XMLHttpRequest();
+req.responseType = "arraybuffer";
+req.open("GET",PLfile,true);
+req.send();
+req.onreadystatechange=function(){
+if (req.readyState == 4){
+  var tmp0 = new Uint8Array(req.response.byteLength);
+  tmp0.set(new Uint8Array(req.response), 0);
+  var payload = new Uint32Array(tmp0);
+  sendPL = payload;
+  setTimeout(poc,1500);
+  }
+};
+}
+
+function allset(){
+setTimeout(location.reload,1000);
+alert("Payload Carregado ... Você Receberá um erro de Memória, Pressione OK Para Fechar ");
+msgs.innerHTML= LoadedMSG;
+}
+
+function awaitpl(){
+setTimeout(location.reload,1000);
+alert("Jailbreak Carregado ... Agora Envie a Payload Desejada Usando o IP PS4 e a Porta 9020");
+msgs.innerHTML="AGUARDE!! ...";
+}
+
+function load_goldhen2b(){
+msgs.innerHTML="Carregando Jailbreak + GoldHEN v2.0b AGUARDE!! ...";
+LoadedMSG="GoldHEN v2.0b Carregado! Bons Jogos!! ";
+PLfile = "goldhen_2.0b.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_goldhen2b2(){
+msgs.innerHTML="Carregando Jailbreak + GoldHEN v2.0b2 AGUARDE!! ...";
+LoadedMSG="GoldHEN v2.0b2 Carregado! Bons Jogos!!";
+PLfile = "goldhen_2.0b2.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_binloader(){
+msgs.innerHTML="Carregando Jailbreak + Bin Loader AGUARDE!! ...";
+run_jb = "binloader";
+setTimeout(poc,1500);
+}
+
+function load_todex(){
+msgs.innerHTML="Carregando Jailbreak + TO - DEX AGUARDE!! ..."
+LoadedMSG="TO - DEX Carregado!!!";
+PLfile = "todex.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_dumper(){
+msgs.innerHTML="Carregando Jailbreak + Game Dumper AGUARDE!! ..."
+LoadedMSG="Game Dumper Carregado!!!";
+PLfile = "dumper.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_ftp(){
+msgs.innerHTML="Carregando Jailbreak + FTP AGUARDE!! ..."
+LoadedMSG="FTP Carregado!!!";
+PLfile = "ftp.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_app2usb(){
+msgs.innerHTML="Carregando Jailbreak + App2USB AGUARDE!! ..."
+LoadedMSG="App2USB Carregado!!!";
+PLfile = "app2usb.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_dbackup(){
+msgs.innerHTML="Carregando Jailbreak + DB Backup AGUARDE!! ..."
+LoadedMSG="DB Backup Carregado!!!";
+PLfile = "backup.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_dbrestore(){
+msgs.innerHTML="Carregando Jailbreak + DB Restore AGUARDE!! ..."
+LoadedMSG="DB Restore Carregado!!!";
+PLfile = "restore.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_enablebUpdates(){
+msgs.innerHTML="Carregando Jailbreak + Ativar Atualizações AGUARDE!! ..."
+LoadedMSG="Ativar Atualizações Carregado!!!";
+PLfile = "enable-updates.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_disableUpdates(){
+msgs.innerHTML="Carregando Jailbreak + Desativar Atualizações AGUARDE!! ..."
+LoadedMSG="Desativar Atualizações Carregado!!!";
+PLfile = "disable-updates.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_historyBlocker(){
+msgs.innerHTML="Carregando Jailbreak + Bloqueador de Histórico AGUARDE!! ..."
+LoadedMSG="Bloqueador de Histórico Carregado!!!";
+PLfile = "history-blocker.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_enablehistory(){
+msgs.innerHTML="Carregando Jailbreak + Habilitar Navegador AGUARDE!! ..."
+LoadedMSG="Habilitar Navegador Carregado!!!";
+PLfile = "enablebrowser.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_kernelDump(){
+msgs.innerHTML="Carregando Jailbreak + Kernel Dumper AGUARDE!! ..."
+LoadedMSG="Kernel Dumper Carregado!!!";
+PLfile = "kernel-dumper.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_moduleDump(){
+msgs.innerHTML="Carregando Jailbreak + Módulo Dumper AGUARDE!! ..."
+LoadedMSG="Kernel Clock Carregado!!!";
+PLfile = "module-dumper.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_ps4debug(){
+msgs.innerHTML="Carregando Jailbreak + PS4 Debug AGUARDE !! ..."
+LoadedMSG="PS4 Debug Carregado!!!";
+PLfile = "ps4debug.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_disbAslr(){
+msgs.innerHTML="Carregando Jailbreak + Desativar ASLR AGUARDE!! ..."
+LoadedMSG="Disable ASLR Carregado!!!";
+PLfile = "disable-aslr.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_exitidu(){
+msgs.innerHTML="Carregando Jailbreak + Exit IDU AGUARDE!! ..."
+LoadedMSG="Exit IDU Carregado!!!";
+PLfile = "exit-idu.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_rifRen(){
+msgs.innerHTML="Carregando Jailbreak + RIF Renamer AGUARDE!! ..."
+LoadedMSG="RIF Renamer Carregado!!!";
+PLfile = "rif-renamer.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_permUart(){
+msgs.innerHTML="Carregando Jailbreak + UART permanente AGUARDE!! ..."
+LoadedMSG="Permanent UART Carregado!!!";
+PLfile = "permanent-uart.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_webrte(){
+msgs.innerHTML="Carregando Jailbreak + WEB - RTE AGUARDE!! ..."
+LoadedMSG="WEB - RTE Carregado!!!";
+PLfile = "webrte.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_toolbox(){
+msgs.innerHTML="Carregando Jailbreak + Orbis - Toolbox AGUARDE!! ..."
+LoadedMSG="Orbis - Toolbox Carregado!!!";
+PLfile = "Orbis-Toolbox-900.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_fanthreshold(){
+var script = document.createElement('script');script.src = "fan-threshold.js";localStorage.setItem('fanthreshold', tempC.value);document.getElementsByTagName('head')[0].appendChild(script);
+msgs.innerHTML="Carregando Jailbreak + Controle de Fan ... AGUARDE!! ..."
+LoadedMSG="Controle de Fan Carregado!!!";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_arabicGuy127(){
+msgs.innerHTML="Carregando Jailbreak + Arabic Guy v1.27 AGUARDE!! ...";
+LoadedMSG="Arabic Guy v1.27 Carregado!!!";
+PLfile = "arabic-guy127.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_arabicGuy132(){
+msgs.innerHTML="Carregando Jailbreak + Arabic Guy v1.32 AGUARDE!! ...";
+LoadedMSG="Arabic Guy v1.32 Carregado!!!";
+PLfile = "arabic-guy132.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_arabicGuy133(){
+msgs.innerHTML="Carregando Jailbreak + Arabic Guy v1.33 AGUARDE!! ...";
+LoadedMSG="Arabic Guy v1.33 Carregado!!!";
+PLfile = "arabic-guy133.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_beefQueef133(){
+msgs.innerHTML="Carregando Jailbreak + Beef Queef Mod v1.33 AGUARDE!! ..."
+LoadedMSG="Beef Queef Mod v1.33 Carregado!!!";
+PLfile = "BeefQueefMod-133.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_beefQueef134(){
+msgs.innerHTML="Carregando Jailbreak + Beef Queef Mod v1.34 AGUARDE!! ..."
+LoadedMSG="Beef Queef Mod v1.34 Carregado!!!";
+PLfile = "BeefQueefMod-134.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_beefQueef138(){
+msgs.innerHTML="Carregando Jailbreak + Beef Queef Mod v1.38 AGUARDE!! ..."
+LoadedMSG="Beef Queef Mod v1.38 Carregado!!!";
+PLfile = "BeefQueefMod-138.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_Oysters100(){
+msgs.innerHTML="Carregando Jailbreak + Oysters Menu v1.00 AGUARDE!! ..."
+LoadedMSG="Oysters Menu v1.00 Carregado!!!";
+PLfile = "OystersMenu-100.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_Oysters113(){
+msgs.innerHTML="Carregando Jailbreak + Oysters Menu v1.13 AGUARDE!! ..."
+LoadedMSG="Oysters Menu v1.13 Carregado!!!";
+PLfile = "OystersMenu-113.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_Oysters119(){
+msgs.innerHTML="Carregando Jailbreak + Oysters Menu v1.19 AGUARDE!! ..."
+LoadedMSG="Oysters Menu v1.19 Carregado!!!";
+PLfile = "OystersMenu-119.bin";
+run_jb = "payload";
+load_payload();
+}
+
+function load_Oysters124(){
+msgs.innerHTML="Carregando Jailbreak + Oysters Menu v1.24 AGUARDE!! ..."
+LoadedMSG="Oysters Menu v1.24 Carregado!!!";
+PLfile = "OystersMenu-124.bin";
+run_jb = "payload";
+load_payload();
+}
+</script>
+</body>
+</html>
