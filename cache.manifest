@@ -49,7 +49,6 @@ ftp.bin
 goldhen_2.0b.bin
 goldhen_2.0b2.bin
 history-blocker.bin
-img.jpg
 index.html
 int64.js
 kernel-dumper.bin
@@ -78,7 +77,6 @@ restore.bin
 rif-renamer.bin
 rop.js
 rop2.js
-style.css
 syscalls.js
 syscalls2.js
 todex.bin
